@@ -47,7 +47,7 @@ then
    xrandr --newmode "1368x768_59.90"  85.72  1368 1440 1584 1800  768 769 772 795  -HSync +Vsync
    xrandr --addmode $DVIN 1368x768_59.90
    xrandr --output $DVIN --off
-   xrandr --output $DVIN --mode "1368x768_59.90" --right-of LVDS1 #Set left of LVDS1 for X1's default monitor, if you use another monitor, change LVDS1 to match your monitor
+   xrandr --output $DVIN --mode "1368x768_59.90" --right-of eDP1 #Set left of LVDS1 for X1's default monitor, if you use another monitor, change LVDS1 to match your monitor
 else
    # shouldn't be able to get here unless "$1" is "off" 
    xrandr --output $DVIN --off
